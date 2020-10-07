@@ -3,7 +3,7 @@ import $ from 'jquery';
 
 import { makeServer } from './server';
 
-import noteStore from './src/dataService';
+import noteStore from './src/noteStore';
 import StickyNotesCreator from './src/components/stickyNotes';
 import DeleteZoneCreator from './src/components/deleteZone';
 

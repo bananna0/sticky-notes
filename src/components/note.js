@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import '../../css/note.css';
 
-import noteStore from '../dataService';
+import noteStore from '../noteStore';
 import ResizeHelper from '../resizeHelper';
 
 import ButtonPanelCreator from './buttonPanel';
