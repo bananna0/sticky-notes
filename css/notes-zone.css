@@ -1,0 +1,10 @@
+:root {
+  --note-zone-color: #666;
+}
+
+.notes-zone {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--note-zone-color);
+}

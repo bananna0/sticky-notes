@@ -1,0 +1,93 @@
+:root {
+  --note-width: 300px;
+  --note-height: 200px;
+  --note-color:  #ffc;
+  --note-shadow-color: rgba(33,33,33,0.8);
+  
+  --note-corner-size: 6px;
+}
+
+.note {
+  width: var(--note-width);
+  height: var(--note-height);
+  position: absolute;
+  background-color: var(--note-color);
+  cursor: move;
+  z-index: 1;
+  padding: 1em;
+
+  -moz-box-shadow:5px 5px 7px var(--note-shadow-color);
+  -webkit-box-shadow: 5px 5px 7px var(--note-shadow-color);
+  box-shadow: 5px 5px 7px var(--note-shadow-color);
+}
+
+.note .note-border {
+  position: absolute;
+  opacity: 0;
+}
+
+.note .note-corner {
+  position: absolute;
+  width: var(--note-corner-size);
+  height: var(--note-corner-size);
+}
+
+.note-top-border {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--note-corner-size);
+  border-top: 1px solid;
+  cursor: n-resize;
+}
+
+.note-left-border {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--note-corner-size);
+  border-left: 1px solid;
+  cursor: w-resize;
+}
+
+.note-bottom-border {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--note-corner-size);
+  border-top: 1px solid;
+  cursor: s-resize;
+}
+
+.note-right-border {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: var(--note-corner-size);
+  border-left: 1px solid;
+  cursor: e-resize;
+}
+
+.note-top-left-corner {
+  top: -3px;
+  left: -3px;
+  cursor: nw-resize;
+}
+
+.note-top-right-corner {
+  top: -3px;
+  right: -3px;
+  cursor: ne-resize;
+}
+
+.note-bottom-left-corner {
+  bottom: -3px;
+  left: -3px;
+  cursor: sw-resize;
+}
+
+.note-bottom-right-corner {
+  bottom: -3px;
+  right: -3px;
+  cursor: se-resize;
+}

@@ -1,0 +1,16 @@
+:root {
+  --note-panel-height: 20px;
+  --note-button-color: mediumseagreen;
+}
+
+.note-panel {
+  height: var(--note-panel-height);
+  margin-bottom: 10px;
+  float: right;
+}
+
+.note-panel button {
+  background-color: var(--note-button-color);
+  opacity: 0.6;
+  border-radius: 5px;
+}

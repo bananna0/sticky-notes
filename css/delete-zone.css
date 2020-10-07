@@ -1,0 +1,31 @@
+:root {
+  --delete-zone-width: 600px;
+  --delete-zone-height: 100px;
+  --delete-zone-top: -20px;
+  --delete-zone-border: 20px;
+  --delete-zone-color: mediumseagreen;
+  --delete-zone-shadow-color: rgba(33,33,33,1);
+}
+
+.delete-zone  {
+  position: absolute;
+  top: var(--delete-zone-top);
+  left: calc(50% - var(--delete-zone-width)/2);
+  margin-left: auto;
+  margin-right: auto;
+  height: var(--delete-zone-height);
+  width: var(--delete-zone-width);
+
+  text-align :center;
+
+  background-color: var(--delete-zone-color);
+  opacity: 0.4;
+
+  z-index: 1;
+
+  -moz-box-shadow:5px 5px 7px var(--delete-zone-shadow-color);
+  -webkit-box-shadow: 5px 5px 7px var(--delete-zone-shadow-color);
+  box-shadow: 5px 5px 7px var(--delete-zone-shadow-color);
+
+  border-radius: var(--delete-zone-border);
+}
